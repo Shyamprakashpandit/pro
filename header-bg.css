@@ -1,0 +1,43 @@
+/* Blue-themed blended static header background (no blinking) and full-width */
+/* The background is applied with fixed-position pseudo-elements so the color band spans 100% viewport width
+   while the header content remains centered inside the existing .container. */
+header.container{position:sticky;top:0;z-index:200;color:#fff;padding-top:18px;padding-bottom:18px}
+
+/* Full-width static blue gradient band behind the header */
+header.container::before{
+  content:"";
+  position:fixed; /* span full viewport width */
+  left:0;right:0;top:0;
+  height:130px; /* reduced from 144px (?10% smaller) */
+  z-index:0;
+  /* a single blended gradient combining multiple harmonious blue tones */
+  background: linear-gradient(90deg, #071431 0%, #0b3d91 25%, #1160d8 55%, #3fb3ff 85%);
+  background-size:cover;
+  opacity:0.98;
+  pointer-events:none;
+}
+
+/* Soft radial highlights in blue tones to add depth (also full-width) */
+header.container::after{
+  content:"";
+  position:fixed;left:0;right:0;top:0;height:130px;z-index:1;pointer-events:none;
+  background: radial-gradient(600px 120px at 15% 40%, rgba(255,255,255,0.04), transparent 6%),
+              radial-gradient(500px 140px at 85% 60%, rgba(63,179,255,0.06), transparent 8%);
+  mix-blend-mode:overlay;opacity:0.95;
+}
+
+/* Ensure header inner nav sits above the background layers */
+header.container .nav{position:relative;z-index:3}
+header.container .logo{background:rgba(255,255,255,0.12);color:#fff}
+
+/* Collapsed header variant (applied when user scrolls) */
+header.container.scrolled{padding-top:8px;padding-bottom:8px;box-shadow:0 6px 18px rgba(2,6,23,0.12);transition:padding 180ms ease,box-shadow 180ms ease}
+header.container.scrolled .logo{width:36px;height:36px;font-size:16px;transition:all 180ms ease}
+header.container.scrolled .carousel-inner{transform:translateY(-8px);transition:transform 180ms ease}
+
+/* Small responsive tweak: reduce band height on small screens */
+@media (max-width:760px){
+  header.container::before, header.container::after{height:97px} /* reduced from 108px (?10% smaller) */
+}
+
+/* If you need a taller band for larger hero areas, increase the height above */

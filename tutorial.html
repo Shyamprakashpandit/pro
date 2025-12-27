@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tutorials - School Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="header-bg.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header class="container">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <a href="home.html" style="text-decoration:none;color:inherit;font-weight:700">← Back to Home</a>
+          <div style="font-weight:700">Tutorials</div>
+            <div class="nav">
+                <div class="brand">
+                    <div class="logo">S</div>
+                    <div>
+                        <div style="font-size:16px">SCHOOL</div>
+                        <div style="font-size:12px;color:var(--muted)">Education Management</div>
+                    </div>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="home.html" class="home.html">Home</a></li>
+                        <li><a href="product.html" class="product.html">Product</a></li>
+                        <li><a href="tutorial.html" class="tutorial.html">Tutorial</a></li>
+                        <li class="dropdown">
+                            <a href="#features" class="nav-link">Features ▾</a>
+                            <div class="dropdown-menu" aria-label="Features menu">
+                                <a href="features.html" class="feature-btn">All features</a>
+                                <a href="tutorial.html" class="feature-btn">Video tutorials</a>
+                                <a href="#administrative" class="feature-btn">Administrative</a>
+                                <a href="#academic" class="feature-btn">Academic</a>
+                                <a href="#lms" class="feature-btn">LMS</a>
+                                <a href="#financial" class="feature-btn">Financial</a>
+                                <a href="#communicative" class="feature-btn">Communicative</a>
+                            </div>
+                        </li>
+                        <li><a href="contact.html" class="contact.html">Contact</a></li>
+                        <li>
+                            <div class="login-dropdown">
+                                <a href="#" class="login-toggle">Login ▾</a>
+                                <div class="login-menu" aria-label="Login menu">
+                                    <a href="student-login.html">Student Login</a>
+                                    <a href="parent-login.html">Parent Login</a>
+                                    <a href="school-login.html">School Login</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+
+                <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-label="Toggle menu">☰</button>
+            </div>
+            <div class="mobile-nav card" id="mobileNav">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#product" class="nav-link">Product</a>
+                <a href="#tutorial" class="nav-link">Tutorial</a>
+                <a href="#features" class="nav-link">Features</a>
+                <!-- feature sub-links for mobile -->
+                <a href="features.html" class="nav-link">All features</a>
+                <a href="tutorial.html" class="nav-link">Video tutorials</a>
+                <a href="#administrative" class="nav-link">Administrative</a>
+                <a href="#academic" class="nav-link">Academic</a>
+                <a href="#lms" class="nav-link">LMS</a>
+                <a href="#financial" class="nav-link">Financial</a>
+                <a href="#communicative" class="nav-link">Communicative</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <div class="login-dropdown">
+                    <a href="#" class="login-toggle">Login ▾</a>
+                    <div class="login-menu">
+                        <a href="student-login.html">Student Login</a>
+                        <a href="parent-login.html">Parent Login</a>
+                        <a href="school-login.html">School Login</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+    <main class="container" style="margin-top:18px">
+        <section>
+            <h1>Tutorials</h1>
+            <p style="color:var(--muted)">Step-by-step guides to get started quickly with the School Management system.</p>
+
+            <div style="margin-top:12px;display:grid;grid-template-columns:repeat(2,1fr);gap:12px">
+                <div class="card">
+                    <h4>Getting Started</h4>
+                    <p style="color:var(--muted)">Set up your school, add staff and students.</p>
+                    <a href="#" style="color:var(--accent);font-weight:600">View tutorial →</a>
+                </div>
+                <div class="card">
+                    <h4>Managing Grades</h4>
+                    <p style="color:var(--muted)">Enter and review exam results efficiently.</p>
+                    <a href="#" style="color:var(--accent);font-weight:600">View tutorial →</a>
+                </div>
+            </div>
+
+            <div style="margin-top:18px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px">
+                <div class="card">
+                    <h4>Attendance</h4>
+                    <p style="color:var(--muted)">Record daily attendance and generate reports.</p>
+                </div>
+                <div class="card">
+                    <h4>Fees &amp; Billing</h4>
+                    <p style="color:var(--muted)">Manage fee structures, invoices and payment tracking.</p>
+                </div>
+                <div class="card">
+                    <h4>Library Management</h4>
+                    <p style="color:var(--muted)">Catalog books, manage lending and track inventory.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container site-footer">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:12px">
+            <div style="display:flex;gap:12px;align-items:center;min-width:220px">
+                <div class="logo" style="width:36px;height:36px">S</div>
+                <div style="font-size:14px;color:var(--footer-text)">SCHOOL • © <span id="year"></span></div>
+            </div>
+
+            <div style="display:flex;gap:24px;align-items:flex-start;flex-wrap:wrap">
+                <div>
+                    <div style="font-weight:700;margin-bottom:8px;color:var(--footer-text)">Quick links</div>
+                    <nav aria-label="Footer navigation">
+                        <a href="home.html" class="footer-link">Home</a><br>
+                        <a href="#admission" class="footer-link">Admission Management</a><br>
+                        <a href="product.html" class="footer-link">School Management</a><br>
+                        <a href="#fees" class="footer-link">Fee Management</a><br>
+                        <a href="#library" class="footer-link">Library Management</a><br>
+                        <a href="#student-management" class="footer-link">Student Management</a>
+                    </nav>
+                </div>
+
+                <div>
+                    <div style="font-weight:700;margin-bottom:8px;color:var(--footer-text)">Resources</div>
+                    <nav aria-label="Footer resources">
+                        <a href="#benefits" class="footer-link">Benefits &amp; Wellbeing</a><br>
+                        <a href="#hr" class="footer-link">Human Resources</a><br>
+                        <a href="#tech" class="footer-link">Tech to Watch</a>
+                    </nav>
+                </div>
+
+                <div>
+                    <div style="font-weight:700;margin-bottom:8px;color:var(--footer-text)">Contact</div>
+                    <div style="color:rgba(255,255,255,0.9);font-size:14px">Email: <a href="mailto:info@school.example" style="color:rgba(255,255,255,0.95)">info@school.example</a></div>
+                    <div style="color:rgba(255,255,255,0.9);font-size:14px;margin-top:6px">Phone: <a href="tel:+1234567890" style="color:rgba(255,255,255,0.95)">+1 (234) 567-890</a></div>
+                </div>
+            </div>
+
+            <div style="min-width:180px">
+                <div style="font-weight:700;margin-bottom:8px;color:var(--footer-text)">Follow us</div>
+                <div class="social-icons" style="display:flex;gap:10px;align-items:center">
+                    <a href="https://facebook.com" aria-label="Facebook" class="social-link" target="_blank" rel="noopener">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M22 12.07C22 6.48 17.52 2 11.93 2S2 6.48 2 12.07c0 4.99 3.66 9.13 8.44 9.93v-7.03H8.1v-2.9h2.34V9.41c0-2.31 1.38-3.59 3.5-3.59c.997 0 1.91.074 2.17.108v2.51h-1.49c-1.17 0-1.4.56-1.4 1.37v1.81h2.8l-.45 2.9h-2.35V22c4.78-.8 8.44-4.94 8.44-9.93z"/></svg>
+                    </a>
+                    <a href="https://twitter.com" aria-label="Twitter" class="social-link" target="_blank" rel="noopener">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M22 5.92c-.61.27-1.27.45-1.96.53.7-.42 1.23-1.08 1.48-1.87-.66.39-1.38.67-2.15.82A3.3 3.3 0 0015.5 5c-1.84 0-3.33 1.5-3.33 3.34c0 .26.03.51.08.75-2.77-.14-5.23-1.47-6.88-3.5c-.29.5-.45 1.07-.45 1.69c0 1.17.6 2.2 1.52 2.81c-.56-.02-1.09-.17-1.55-.43v.04c0 1.62 1.15 2.97 2.67 3.28c-.28.08-.58.12-.88.12c-.21 0-.42-.02-.62-.06c.42 1.3 1.63 2.25 3.07 2.28A6.63 6.63 0 012 19.54A9.36 9.36 0 0011.29 22c6.77 0 10.47-5.6 10.47-10.47c0-.16-.01-.32-.02-.48c.72-.52 1.34-1.17 1.83-1.91c-.66.29-1.36.48-2.09.57z"/></svg>
+                    </a>
+                    <a href="https://instagram.com" aria-label="Instagram" class="social-link" target="_blank" rel="noopener">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm5 5.78A4.22 4.22 0 0010 12a4.22 4.22 0 004.22 4.22A4.22 4.22 0 0019 12a4.22 4.22 0 00-4.22-4.22zM18 7.5a1.2 1.2 0 11-2.4 0 1.2 1.2 0 012.4 0z"/></svg>
+                    </a>
+                    <a href="https://youtube.com" aria-label="YouTube" class="social-link" target="_blank" rel="noopener">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M23.5 6.2a3 3 0 00-2.1-2.12C19.7 3.5 12 3.5 12 3.5s-7.7 0-9.4.58A3 3 0 00.5 6.2 31.6 31.6 0 000 12a31.6 31.6 0 00.5 5.8a3 3 0 002.1 2.12C4.3 20.5 12 20.5 12 20.5s7.7 0 9.4-.58a3 3 0 002.1-2.12A31.6 31.6 0 0024 12a31.6 31.6 0 00-.5-5.8zM9.8 15.1V8.9l5.4 3.1-5.4 3.1z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div style="margin-top:8px;color:var(--footer-text);font-size:13px">
+                <small>123 Learning Lane, Knowledge City • Open Mon–Fri 9am–5pm</small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>

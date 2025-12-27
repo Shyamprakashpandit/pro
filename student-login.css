@@ -1,0 +1,9 @@
+/* Styles specific to student login page */
+.card input{width:100%;}
+.card button.cta{min-width:120px}
+
+/* Small adjustments */
+@media (max-width:520px){
+  .card{padding:12px}
+  .card button, .card a.cta{width:100%}
+}

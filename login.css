@@ -1,0 +1,23 @@
+/* Login dropdown styles (separate file) */
+.login-dropdown{position:relative;display:inline-block}
+.login-toggle{display:inline-block;padding:8px 12px;border-radius:10px;background:rgba(255,255,255,0.06);color:#fff;text-decoration:none;font-weight:700}
+.login-toggle:hover{background:rgba(255,255,255,0.12)}
+
+.login-menu{display:none;position:absolute;top:calc(100% + 8px);right:0;background:var(--card);color:#071431;border-radius:10px;padding:8px;box-shadow:0 8px 24px rgba(2,6,23,0.12);min-width:180px;z-index:350;border:1px solid rgba(11,17,32,0.04)}
+.login-menu a{display:block;padding:10px 12px;color:var(--muted);text-decoration:none;border-radius:8px;font-weight:600}
+.login-menu a:hover{background:rgba(6,34,102,0.04);color:#0b3d91}
+
+/* show on hover for pointer devices */
+@media (hover: hover) and (pointer: fine){
+  .login-dropdown:hover .login-menu{display:block}
+}
+
+/* visible when .open added by JS (for touch devices) */
+.login-dropdown.open .login-menu{display:block}
+
+/* mobile friendly: make menu full width inside mobile-nav if present */
+.mobile-nav .login-menu{position:static;display:block;background:transparent;box-shadow:none;padding:0;border:0}
+.mobile-nav .login-menu a{display:block;padding:12px 0;color:var(--muted)}
+
+/* small visual adjustments */
+.login-toggle:focus{outline:3px solid rgba(88,166,255,0.18);outline-offset:2px}

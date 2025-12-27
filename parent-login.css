@@ -1,0 +1,11 @@
+/* Styles specific to parent login page */
+.card input{width:100%;}
+.card button.cta{min-width:120px}
+
+/* Emphasize parent-specific color */
+.card{border-left:6px solid #f59e0b}
+
+@media (max-width:520px){
+  .card{padding:12px;border-left:0}
+  .card button, .card a.cta{width:100%}
+}

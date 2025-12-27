@@ -1,0 +1,381 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Responsive Index Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="header-bg.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header class="container">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <a href="home.html" style="text-decoration:none;color:inherit;font-weight:700">← Back to Home</a>
+          <div style="font-weight:700">Home</div>
+            <div class="nav">
+                <div class="brand">
+                    <div class="logo">S</div>
+                    <div>
+                        <div style="font-size:16px">SCHOOL</div>
+                        <div style="font-size:12px;color:var(--muted)">Education Management</div>
+                    </div>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="home.html" class="home.html">Home</a></li>
+                        <li><a href="product.html" class="product.html">Product</a></li>
+                        <li><a href="tutorial.html" class="tutorial.html">Tutorial</a></li>
+                        <li class="dropdown">
+                            <a href="#features" class="nav-link">Features ▾</a>
+                            <div class="dropdown-menu" aria-label="Features menu">
+                                <a href="features.html" class="feature-btn">All features</a>
+                                <a href="tutorial.html" class="feature-btn">Video tutorials</a>
+                                <a href="#administrative" class="feature-btn">Administrative</a>
+                                <a href="#academic" class="feature-btn">Academic</a>
+                                <a href="#lms" class="feature-btn">LMS</a>
+                                <a href="#financial" class="feature-btn">Financial</a>
+                                <a href="#communicative" class="feature-btn">Communicative</a>
+                            </div>
+                        </li>
+                        <li><a href="contact.html" class="contact.html">Contact</a></li>
+                        <li>
+                            <div class="login-dropdown">
+                                <a href="#" class="login-toggle">Login ▾</a>
+                                <div class="login-menu" aria-label="Login menu">
+                                    <a href="student-login.html">Student Login</a>
+                                    <a href="parent-login.html">Parent Login</a>
+                                    <a href="school-login.html">School Login</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+
+                <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-label="Toggle menu">☰</button>
+            </div>
+            <div class="mobile-nav card" id="mobileNav">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#product" class="nav-link">Product</a>
+                <a href="#tutorial" class="nav-link">Tutorial</a>
+                <a href="#features" class="nav-link">Features</a>
+                <!-- feature sub-links for mobile -->
+                <a href="features.html" class="nav-link">All features</a>
+                <a href="tutorial.html" class="nav-link">Video tutorials</a>
+                <a href="#administrative" class="nav-link">Administrative</a>
+                <a href="#academic" class="nav-link">Academic</a>
+                <a href="#lms" class="nav-link">LMS</a>
+                <a href="#financial" class="nav-link">Financial</a>
+                <a href="#communicative" class="nav-link">Communicative</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <div class="login-dropdown">
+                    <a href="#" class="login-toggle">Login ▾</a>
+                    <div class="login-menu">
+                        <a href="student-login.html">Student Login</a>
+                        <a href="parent-login.html">Parent Login</a>
+                        <a href="school-login.html">School Login</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+    <!-- Sliding image panel (carousel) placed below header (separate, not combined) -->
+    <section id="carousel" class="carousel" aria-label="Featured images">
+        <div class="carousel-inner">
+            <div class="slides">
+                <div class="slide" data-index="0">
+                    <img src="C:\\Users\\hp\\OneDrive\\Desktop\\School management\\image\\student_playing.jpeg" alt="Students playing on school field">
+                    <div class="slide-caption">Active outdoor programs &amp; sports</div>
+                </div>
+                <div class="slide" data-index="1">
+                    <img src="C:\\Users\\hp\\OneDrive\\Desktop\\School management\\image\\teaching.jpeg" alt="Teacher teaching in modern classroom">
+                    <div class="slide-caption">Interactive classroom learning</div>
+                </div>
+                <div class="slide" data-index="2">
+                    <img src="C:\\Users\\hp\\OneDrive\\Desktop\\School management\\image\\library.jpeg" alt="Students studying in a library">
+                    <div class="slide-caption">Extensive library and resources</div>
+                </div>
+            </div>
+
+            <button class="carousel-control prev" aria-label="Previous slide">◀</button>
+            <button class="carousel-control next" aria-label="Next slide">▶</button>
+
+            <div class="carousel-indicators" role="tablist" aria-label="Slide indicators">
+                <button class="indicator" data-slide-to="0" aria-label="Go to slide 1"></button>
+                <button class="indicator" data-slide-to="1" aria-label="Go to slide 2"></button>
+                <button class="indicator" data-slide-to="2" aria-label="Go to slide 3"></button>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        <section id="home" class="hero">
+            <div>
+                <h1>Welcome to School Management</h1>
+                <p>Our School Management System is a smart and complete digital platform designed to help schools manage students, teachers, classrooms, and daily operations efficiently from one place. It simplifies tasks like student records, attendance, class schedules, teacher management, and communication, reducing paperwork and saving valuable time. With a secure and user-friendly dashboard, schools can access real-time data anytime, from any device. This system improves coordination between management, teachers, students, and parents, making school administration smoother, faster, and more organized while supporting better learning outcomes.</p>
+                <div class="actions">
+                    <a class="cta" href="#contact">Get Started</a>
+                    <a href="#features" style="align-self:center;color:var(--muted)">Explore features →</a>
+                </div>
+
+                <div class="card" style="margin-top:18px">
+                    <strong>Trusted by schools:</strong>
+                    <div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap">
+                        <div style="padding:8px 12px;border-radius:8px;background:#f1f6ff;font-weight:600">Primary</div>
+                        <div style="padding:8px 12px;border-radius:8px;background:#fff7f0;font-weight:600">Secondary</div>
+                        <div style="padding:8px 12px;border-radius:8px;background:#f3fff8;font-weight:600">Colleges</div>
+                    </div>
+                </div>
+            </div>
+
+            <aside>
+                <div class="card">
+                    <h3 style="margin:0 0 8px">Quick overview</h3>
+                    <p style="color:var(--muted);margin:0 0 12px">A compact panel to highlight metrics, images, or preview content on larger screens.</p>
+                    <div class="feature-list">
+                        <div class="feature">
+                            <strong>Fast</strong>
+                            <div style="font-size:12px;color:var(--muted)">Tiny CSS, great perf</div>
+                        </div>
+                        <div class="feature">
+                            <strong>Adaptive</strong>
+                            <div style="font-size:12px;color:var(--muted)">Resize-friendly</div>
+                        </div>
+                        <div class="feature">
+                            <strong>Secure</strong>
+                            <div style="font-size:12px;color:var(--muted)">Role-based access</div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </section>
+
+        <section id="product">
+            <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+                <h2 style="margin:0">Product</h2>
+                <p style="margin:0;color:var(--muted)">Main modules and tools included in the system.</p>
+            </div>
+            <div style="margin-top:16px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px">
+                <div class="card">
+                    <h4>Student Management</h4>
+                    <p style="color:var(--muted)">Enroll, track progress, and manage profiles.</p>
+                </div>
+                <div class="card">
+                    <h4>Attendance</h4>
+                    <p style="color:var(--muted)">Record daily attendance and generate reports.</p>
+                </div>
+                <div class="card">
+                    <h4>Exams & Grades</h4>
+                    <p style="color:var(--muted)">Create exams, grade entries and transcripts.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tutorial">
+            <h2>Tutorials</h2>
+            <p style="color:var(--muted)">Step-by-step guides to get started quickly.</p>
+            <div style="margin-top:12px;display:grid;grid-template-columns:repeat(2,1fr);gap:12px">
+                <div class="card">
+                    <h4>Getting Started</h4>
+                    <p style="color:var(--muted)">Set up your school, add staff and students.</p>
+                    <a href="#" style="color:var(--accent);font-weight:600">View tutorial →</a>
+                </div>
+                <div class="card">
+                    <h4>Managing Grades</h4>
+                    <p style="color:var(--muted)">Enter and review exam results efficiently.</p>
+                    <a href="#" style="color:var(--accent);font-weight:600">View tutorial →</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="features">
+            <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+                <h2 style="margin:0">Features</h2>
+                <p style="margin:0;color:var(--muted)">Everything you need to run your institution.</p>
+            </div>
+
+            <div class="grid-2" style="margin-top:18px">
+                <div>
+                    <div class="card">
+                        <h3>Responsive grid</h3>
+                        <p style="color:var(--muted)">Use simple CSS grid and flexbox to arrange content that adapts to any screen size.</p>
+                        <ul style="color:var(--muted)">
+                            <li>Flexible columns</li>
+                            <li>Smart breakpoints</li>
+                            <li>Mobile-first design</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="card">
+                        <h3>Customize easily</h3>
+                        <p style="color:var(--muted)">Variables and small utilities make it easy to theme the layout to match your brand.</p>
+                        <img src="https://via.placeholder.com/600x320?text=Responsive+Preview" alt="Preview" style="width:100%;border-radius:8px;margin-top:12px">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p style="color:var(--muted)">Questions or feedback? Send a message.</p>
+            <div style="margin-top:12px;max-width:680px">
+                <div class="card">
+                    <form>
+                        <label>
+                            <div style="font-weight:600">Name</div>
+                            <input type="text" placeholder="Your name">
+                        </label>
+                        <label>
+                            <div style="font-weight:600">Email</div>
+                            <input type="email" placeholder="you@example.com">
+                        </label>
+                        <label>
+                            <div style="font-weight:600">Message</div>
+                            <textarea rows="4" placeholder="Write a message"></textarea>
+                        </label>
+                        <button type="submit">Send message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Promotional image grid -->
+        <section id="promotional">
+            <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+                <h2 style="margin:0">Promotional Gallery</h2>
+                <p style="margin:0;color:var(--muted)">Highlights from our school community and resources.</p>
+            </div>
+
+            <div class="promo-grid" style="margin-top:16px">
+                <div class="promo-card card">
+                    <img src="images/ai_generated.jpg" alt="AI generated illustration of students collaborating around a tablet">
+                    <div class="promo-caption">
+                        <strong>AI-Generated Illustration</strong>
+                        <p>This AI-generated promotional image shows diverse students collaborating around a tablet in a modern classroom. It uses vibrant colors and stylized lighting to emphasize teamwork, digital learning, and engagement — ideal for marketing banners and hero sections.</p>
+                        <a class="cta" href="#tutorial" style="display:inline-block;margin-top:8px">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="promo-card card">
+                    <img src="https://source.unsplash.com/800x600/?school,students" alt="Students playing in school">
+                    <div class="promo-caption">
+                        <strong>Active Students</strong>
+                        <p>Engaging sports and play activities.</p>
+                        <a class="cta" href="#tutorial" style="display:inline-block;margin-top:8px">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="promo-card card">
+                    <img src="https://source.unsplash.com/800x600/?books,textbooks" alt="Stack of school books">
+                    <div class="promo-caption">
+                        <strong>Learning Resources</strong>
+                        <p>Curated textbook library for all grades.</p>
+                        <a class="cta" href="#product" style="display:inline-block;margin-top:8px">View Products</a>
+                    </div>
+                </div>
+
+                <div class="promo-card card">
+                    <img src="https://source.unsplash.com/800x600/?classroom,teaching" alt="Teacher in classroom">
+                    <div class="promo-caption">
+                        <strong>Classroom Life</strong>
+                        <p>Interactive lessons and modern classrooms.</p>
+                        <a class="cta" href="#features" style="display:inline-block;margin-top:8px">See Features</a>
+                    </div>
+                </div>
+
+                <div class="promo-card card">
+                    <img src="https://source.unsplash.com/800x600/?kids,reading" alt="Kids reading books">
+                    <div class="promo-caption">
+                        <strong>Reading Time</strong>
+                        <p>Encouraging early reading programs.</p>
+                        <a class="cta" href="#tutorial" style="display:inline-block;margin-top:8px">Start Tutorial</a>
+                    </div>
+                </div>
+
+                <div class="promo-card card">
+                    <img src="https://source.unsplash.com/800x600/?study,students" alt="Students studying together">
+                    <div class="promo-caption">
+                        <strong>Study Groups</strong>
+                        <p>Collaborative learning made simple.</p>
+                        <a class="cta" href="#product" style="display:inline-block;margin-top:8px">Get Started</a>
+                    </div>
+                </div>
+
+                <div class="promo-card card">
+                    <img src="https://source.unsplash.com/800x600/?library,school" alt="School library bookshelves">
+                    <div class="promo-caption">
+                        <strong>School Library</strong>
+                        <p>Access thousands of digital and physical books.</p>
+                        <a class="cta" href="#contact" style="display:inline-block;margin-top:8px">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="container site-footer">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:12px">
+            <div style="display:flex;gap:12px;align-items:center;min-width:220px">
+                <div class="logo" style="width:36px;height:36px">S</div>
+                <div style="font-size:14px;color:var(--footer-text)">SCHOOL • © <span id="year"></span></div>
+            </div>
+
+            <div style="display:flex;gap:24px;align-items:flex-start;flex-wrap:wrap">
+                <div>
+                    <div style="font-weight:700;margin-bottom:8px;color:var(--footer-text)">Quick links</div>
+                    <nav aria-label="Footer navigation">
+                        <a href="#home" class="footer-link">Home</a><br>
+                        <a href="#admission" class="footer-link">Admission Management</a><br>
+                        <a href="#product" class="footer-link">School Management</a><br>
+                        <a href="#fees" class="footer-link">Fee Management</a><br>
+                        <a href="#library" class="footer-link">Library Management</a><br>
+                        <a href="#student-management" class="footer-link">Student Management</a>
+                    </nav>
+                </div>
+
+                <div>
+                    <div style="font-weight:700;margin-bottom:8px;color:var(--footer-text)">Resources</div>
+                    <nav aria-label="Footer resources">
+                        <a href="#benefits" class="footer-link">Benefits &amp; Wellbeing</a><br>
+                        <a href="#hr" class="footer-link">Human Resources</a><br>
+                        <a href="#tech" class="footer-link">Tech to Watch</a>
+                    </nav>
+                </div>
+
+                <div>
+                    <div style="font-weight:700;margin-bottom:8px;color:var(--footer-text)">Contact</div>
+                    <div style="color:rgba(255,255,255,0.9);font-size:14px">Email: <a href="mailto:info@school.example" style="color:rgba(255,255,255,0.95)">info@school.example</a></div>
+                    <div style="color:rgba(255,255,255,0.9);font-size:14px;margin-top:6px">Phone: <a href="tel:+1234567890" style="color:rgba(255,255,255,0.95)">+1 (234) 567-890</a></div>
+                </div>
+            </div>
+
+            <div style="min-width:180px">
+                <div style="font-weight:700;margin-bottom:8px;color:var(--footer-text)">Follow us</div>
+                <div class="social-icons" style="display:flex;gap:10px;align-items:center">
+                    <a href="https://facebook.com" aria-label="Facebook" class="social-link" target="_blank" rel="noopener">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M22 12.07C22 6.48 17.52 2 11.93 2S2 6.48 2 12.07c0 4.99 3.66 9.13 8.44 9.93v-7.03H8.1v-2.9h2.34V9.41c0-2.31 1.38-3.59 3.5-3.59c.997 0 1.91.074 2.17.108v2.51h-1.49c-1.17 0-1.4.56-1.4 1.37v1.81h2.8l-.45 2.9h-2.35V22c4.78-.8 8.44-4.94 8.44-9.93z"/></svg>
+                    </a>
+                    <a href="https://twitter.com" aria-label="Twitter" class="social-link" target="_blank" rel="noopener">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M22 5.92c-.61.27-1.27.45-1.96.53.7-.42 1.23-1.08 1.48-1.87-.66.39-1.38.67-2.15.82A3.3 3.3 0 0015.5 5c-1.84 0-3.33 1.5-3.33 3.34c0 .26.03.51.08.75-2.77-.14-5.23-1.47-6.88-3.5c-.29.5-.45 1.07-.45 1.69c0 1.17.6 2.2 1.52 2.81c-.56-.02-1.09-.17-1.55-.43v.04c0 1.62 1.15 2.97 2.67 3.28c-.28.08-.58.12-.88.12c-.21 0-.42-.02-.62-.06c.42 1.3 1.63 2.25 3.07 2.28A6.63 6.63 0 012 19.54A9.36 9.36 0 0011.29 22c6.77 0 10.47-5.6 10.47-10.47c0-.16-.01-.32-.02-.48c.72-.52 1.34-1.17 1.83-1.91c-.66.29-1.36.48-2.09.57z"/></svg>
+                    </a>
+                    <a href="https://instagram.com" aria-label="Instagram" class="social-link" target="_blank" rel="noopener">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm5 5.78A4.22 4.22 0 0010 12a4.22 4.22 0 004.22 4.22A4.22 4.22 0 0019 12a4.22 4.22 0 00-4.22-4.22zM18 7.5a1.2 1.2 0 11-2.4 0 1.2 1.2 0 012.4 0z"/></svg>
+                    </a>
+                    <a href="https://youtube.com" aria-label="YouTube" class="social-link" target="_blank" rel="noopener">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M23.5 6.2a3 3 0 00-2.1-2.12C19.7 3.5 12 3.5 12 3.5s-7.7 0-9.4.58A3 3 0 00.5 6.2 31.6 31.6 0 000 12a31.6 31.6 0 00.5 5.8a3 3 0 002.1 2.12C4.3 20.5 12 20.5 12 20.5s7.7 0 9.4-.58a3 3 0 002.1-2.12A31.6 31.6 0 0024 12a31.6 31.6 0 00-.5-5.8zM9.8 15.1V8.9l5.4 3.1-5.4 3.1z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div style="margin-top:8px;color:var(--footer-text);font-size:13px">
+                <small>123 Learning Lane, Knowledge City • Open Mon–Fri 9am–5pm</small>
+            </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>

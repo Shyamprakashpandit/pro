@@ -1,0 +1,7 @@
+/* Styles for student sign-up page */
+.card input{width:100%}
+.card button.cta{min-width:120px}
+
+@media (max-width:520px){
+  .card button, .card a.cta{width:100%}
+}
